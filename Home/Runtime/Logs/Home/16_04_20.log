@@ -1,0 +1,6 @@
+[ 2016-04-20T13:19:21+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1292:Incorrect date value: '' for column 'date' at row 1
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('','','')
+ERR: 1292:Incorrect date value: '' for column 'date' at row 1
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('','','')
+

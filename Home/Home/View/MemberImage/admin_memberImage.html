@@ -1,0 +1,105 @@
+<layout name="admin" />
+<link href="__ROOT__/Public/css/flexigrid.css" rel="stylesheet" type="text/css"  media="all" />
+<script type="text/javascript">
+$( document ).ready(function(e) {
+	
+$("#flexmel").flexigrid({
+         height:510,
+		 width:'auto',
+         url:'../Home/memberImage_show',
+		 dataType:'json',
+         colModel:[  
+		   {display:'编号',name:'id',width:200,align:'center',hide:false,toggle:false},
+		   {display:'标题',name:'title',width:400,align:'center',hide:false,toggle:false},
+		   {display:'文件名',name:'path',width:400,align:'center',hide:false,toggle:false},
+		   ],
+		 buttons:[
+		   {name:'新增',displayname:'新增',bclass:'add',onpress:test},
+		   {name:'删除',displayname:'删除',bclass:'delete',onpress:test},
+		   {name:'查看',displayname:'查看',bclass:'edit',onpress:test},
+		   ],
+		 method:'POST',
+		 autoload:true,
+         errormsg:'发生异常',
+		 usepager:true,
+		 nowrap:false,
+		 title:'组内成员图片管理',
+		 pagestat:'显示记录从{from}到{to}，总数{total}条',
+		 useRp:true,
+		 rp:5,
+		 rpOptions:[5,10,20],
+		 nomsg:'没有符合条件的记录存在',
+		 minColToggle:0,
+		 showTableToggleBtn:true,
+		 showTableToggleBtn:true,
+		 showcheckbox:true,
+		 resizable:false
+}
+);
+      function test(com, grid) {
+                if (com == '删除') {
+				if(($('.trSelected', grid).length)==0)
+				    {
+					confirm('未选中任何记录！请选择后再进行操作');
+				    }
+				else{
+				     
+				   var length=$('.trSelected', grid).length;
+				   var del=new Array(length);
+				   for (var i = 0;i < length;i++){
+				      var str= $('.trSelected',grid).eq(i).find('td').eq(0).text();
+				      del[i]=str;
+				      }
+				  var values=confirm('确定删除？');
+				  if(values==true){
+				  window.location.href="../Home/memberimage_delete/"+encodeURIComponent(del)+""
+				  }else{}
+				  
+					}
+                } else if (com == '新增') {
+                    window.location.href="../Home/Home/View/"
+                }
+				else if(com=='查看'){
+					if(($('.trSelected', grid).length)==0)
+				    {
+					confirm('未选中任何记录！请选择后再进行操作');
+				    }
+				else{
+					if(($('.trSelected', grid).length)>1)
+				    {
+					confirm('一次只能选中一个图片！');
+				    }
+				    else{
+				    var filename=$('.trSelected',grid).eq(0).find('td').eq(2).text();
+					var path="__ROOT__/Public/images/member/"+filename;
+					$("#onlyone").attr("src",path);
+					//$(".addform").append("<img src=\""+path+"\"/>");
+					openDialogAdd();
+					}
+				}
+				}
+            }
+	  function openDialogAdd(){
+	            $('.showimg').slideDown();
+				
+				}
+	  
+});
+function cutdown(){
+          $('.showimg').slideUp();
+         } 
+		                                                                                 
+</script>
+<div class="table">
+<table id="flexmel">
+</table>
+</div>
+<div class="showimg" style="display:none;"> 
+     <img id="onlyone" src=""/>			
+     <div>
+	 <span><input type="button" value="关闭" onclick="cutdown()"></span>
+	 </div>	
+</div>
+
+<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/flexigrid.js"></script>

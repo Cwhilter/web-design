@@ -1,0 +1,66 @@
+[ 2016-04-14T13:36:20+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry '这是一次测试' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2015-6-8','这是一次测试','这是一场测试')
+ERR: 1062:Duplicate entry '这是一次测试' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2015-6-8','这是一次测试','这是一场测试')
+
+[ 2016-04-14T13:40:45+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2018-2-1','hello','hello world！')
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2018-2-1','hello','hello world！')
+
+[ 2016-04-14T13:44:00+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2018-2-1','hello','hello world!')
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2018-2-1','hello','hello world!')
+
+[ 2016-04-14T13:46:41+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2017-3-4','hello','hello world!')
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2017-3-4','hello','hello world!')
+
+[ 2016-04-14T13:48:08+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2017-3-4','hello','hello world!')
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2017-3-4','hello','hello world!')
+
+[ 2016-04-14T13:49:08+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2017-3-4','hello','hello world!')
+ERR: 1062:Duplicate entry 'hello' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2017-3-4','hello','hello world!')
+
+[ 2016-04-14T14:10:31+08:00 ] ::1 /yfsj-cs/index.php/Home/news
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+
+[ 2016-04-14T14:10:48+08:00 ] ::1 /yfsj-cs/index.php/Home/news
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+
+[ 2016-04-14T14:20:51+08:00 ] ::1 /yfsj-cs/index.php/Home/news
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+
+[ 2016-04-14T14:21:39+08:00 ] ::1 /yfsj-cs/index.php/Home/news
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,5 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_news` WHERE ( limit 0,5 ) 
+
+[ 2016-04-14T15:17:52+08:00 ] ::1 /yfsj-cs/index.php/Home/add
+ERR: 1062:Duplicate entry '这是一次测试' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2016-6-8','这是一次测试','哈哈哈')
+ERR: 1062:Duplicate entry '这是一次测试' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_news` (`date`,`title`,`body`) VALUES ('2016-6-8','这是一次测试','哈哈哈')
+

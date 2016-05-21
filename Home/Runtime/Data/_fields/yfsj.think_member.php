@@ -1,0 +1,1 @@
+a:8:{i:0;s:4:"name";i:1;s:3:"sex";i:2;s:3:"age";i:3;s:5:"major";i:4;s:6:"number";i:5;s:12:"introduction";s:3:"_pk";s:6:"number";s:5:"_type";a:6:{s:4:"name";s:8:"char(10)";s:3:"sex";s:7:"char(2)";s:3:"age";s:16:"int(10) unsigned";s:5:"major";s:8:"char(30)";s:6:"number";s:8:"char(15)";s:12:"introduction";s:4:"text";}}

@@ -1,0 +1,18 @@
+<layout name="layout" />
+<div class="wrap">
+    <div class="title">
+         <h1>新闻动态</h1>
+         <div class="title-left">
+		 <volist name="news" id="data" Key="k">
+		     <li><p><img src="__ROOT__/Public/images/icon2.png"/>{$data.date}&nbsp;<a href="http://localhost/yfsj-cs/index.php/Home/article/{$k-1}" class="default">{$data.title}</a></p></li>
+		</volist>
+		<li>{$page}</li>	
+         </div>
+		 <div class="title-right">
+		 <h2>{$news[$number].title}</h2>
+		 <li><p>{$news[$number].body}</p></li>
+		 </div>
+    </div>
+</div>
+<div class="clear">
+</div>

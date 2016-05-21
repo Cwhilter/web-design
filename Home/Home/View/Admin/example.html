@@ -1,0 +1,13 @@
+<layout name="admin" />
+<table width="100%" border="1" cellpadding="1" bgcolor="#99cc33" bordercolor="#ffffff">
+<volist name="news" id="data">
+<tr class="grid">
+  <td bgcolor="#ffffff" align="center">{$data.date}</td>
+  <td bgcolor="#ffffff" align="center">{$data.title}</td>
+  <td bgcolor="#ffffff" align="center">{$data.body}</td>
+</tr>
+</volist>
+<tr class="grid">
+<td colspan="3" bgcolor="#ffffff" align="center">{$page}</td>
+</tr>
+</table>

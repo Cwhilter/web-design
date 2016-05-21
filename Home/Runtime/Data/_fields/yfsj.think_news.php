@@ -1,0 +1,1 @@
+a:5:{i:0;s:4:"date";i:1;s:5:"title";i:2;s:4:"body";s:3:"_pk";s:5:"title";s:5:"_type";a:3:{s:4:"date";s:4:"date";s:5:"title";s:8:"char(50)";s:4:"body";s:4:"text";}}
